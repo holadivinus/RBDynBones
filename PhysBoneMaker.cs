@@ -34,7 +34,7 @@ namespace RBDynBones
         public float ColliderScale = 1;
         public AnimationCurve ColliderCurve = AnimationCurve.Linear(0, 0, 1, 1);
         public float Elasticity = .05f;
-        public float VisualSmoothing = .05f;
+        public float VisualSmoothing = 1.5f;
         public MirrorSyncMode MirrorRotationSyncMode = MirrorSyncMode.Tweened;
 
         [Header("Physics Settings")]
@@ -43,7 +43,7 @@ namespace RBDynBones
         public Vector3 ConstantForce = Vector3.zero;
 
         public RigSegment RigInheritance = RigSegment.Nope;
-        public float RigInheritanceFactor = 10f;
+        public float RigInheritanceFactor = .1f;
 
 
         private void OnDrawGizmosSelected()
