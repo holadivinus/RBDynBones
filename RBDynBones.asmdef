@@ -1,0 +1,19 @@
+{
+    "name": "RBDynBones",
+    "rootNamespace": "RBDynBones",
+    "references": [
+        "GUID:57a6d82589ae03c4cabdc058f719f231",
+        "GUID:bf9d1ae7904474348a2181cf6f3a3a32",
+        "GUID:20441fdfffb12d24da9276657491883e",
+        "GUID:21b0c8d1703a94250bfac916590cea4f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
