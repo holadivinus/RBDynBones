@@ -1,0 +1,332 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2819065750126334228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7681037978869363839}
+  - component: {fileID: 9103977974491925281}
+  - component: {fileID: 5054893049454429591}
+  m_Layer: 0
+  m_Name: RemoveInMirror
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7681037978869363839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2819065750126334228}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9103977974491925281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2819065750126334228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003c25630808c7243847bd9149749434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _AwakeEvent:
+    _PersistentCalls: []
+  _StartEvent:
+    _PersistentCalls: []
+  _EnableEvent:
+    _PersistentCalls:
+    - _Target: {fileID: 0}
+      _MethodName: SLZ.Marrow.Utilities.ObjectPathExtensions, SLZ.Marrow, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null.ObjectPath
+      _PersistentArguments:
+      - _Type: 13
+        _Int: 0
+        _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 2819065750126334228}
+    - _Target: {fileID: 0}
+      _MethodName: System.Text.RegularExpressions.Regex, System, Version=4.0.0.0,
+        Culture=neutral, PublicKeyToken=b77a5c561934e089.IsMatch
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 0
+        _String: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 2
+        _Int: 0
+        _String: (?i)mirror
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 0}
+      _MethodName: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.Equals
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 1
+        _String: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 1
+        _Int: 0
+        _String: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 2819065750126334228}
+      _MethodName: SetActive
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 2
+        _String: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+  _DisableEvent:
+    _PersistentCalls: []
+  _DestroyEvent:
+    _PersistentCalls: []
+--- !u!114 &5054893049454429591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2819065750126334228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 548d337563b26034abbc6be67b18eea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BowlName: Bowl
+  EventHolder: {fileID: 9103977974491925281}
+  EventFieldPath: _EnableEvent
+  BowlEvtHolderType:
+    _assemblyTypeName: UltEvents.LifeCycleEvents, UltEvents, Version=1.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  _pos: {x: 0, y: 0}
+  _size: {x: 1000, y: 800}
+  NodeDatas:
+  - Name: 
+    ID: fec52c4f-bb6f-45a7-919c-ebc11c3da88a
+    FlowInputs: []
+    FlowOutputs:
+    - Name: 
+      ID: 5f221285-e4d2-4554-b67a-83733bc3d477
+    DataInputs: []
+    DataOutputs: []
+    NoadType: 0
+    _position: {x: 0, y: 0}
+    LastPosition: {x: 0, y: 0}
+    Book: {fileID: 0}
+    BookTag: 
+  - Name: ObjectPathExtensions.ObjectPath
+    ID: 19183a78-795c-4649-8afe-930938c3711c
+    FlowInputs:
+    - Name: Exec
+      SourcesIds:
+      - 5f221285-e4d2-4554-b67a-83733bc3d477
+      ID: c3f496b8-bfd6-4ea0-a136-77f7f0649550
+    FlowOutputs:
+    - Name: Done
+      ID: 3d0177af-c495-4f15-af36-db7eb786ff52
+    DataInputs:
+    - Name: go
+      Type:
+        _assemblyTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      ID: da5a14ea-b96b-4b8e-8071-2187c9d9d226
+      UIConst: 0
+      DefaultStringValue: 
+      ValDefs: {x: 0, y: 0, z: 0, w: 0}
+      DefaultObject: {fileID: 2819065750126334228}
+      ConstInput: 0
+      EditorConstName: 
+    DataOutputs:
+    - Name: string
+      TargetIds:
+      - c47dc58f-765d-43aa-bb59-36544d2a5b37
+      Type:
+        _assemblyTypeName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      ID: fd051c48-2140-4b7f-8058-00fbc7c83d0e
+    NoadType: 1
+    _position: {x: 230, y: 118}
+    LastPosition: {x: 230, y: 118}
+    Book: {fileID: 11400000, guid: 97fafb592a7f3f442b952fdee70edf10, type: 2}
+    BookTag: '{"_assemblyMethodName":"SLZ.Marrow.Utilities.ObjectPathExtensions,
+      SLZ.Marrow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null.ObjectPath","Parameters":[{"_assemblyTypeName":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"}]}'
+  - Name: Regex.IsMatch
+    ID: 537c37eb-5689-4d71-85ed-a64462a002bb
+    FlowInputs:
+    - Name: Exec
+      SourcesIds:
+      - 3d0177af-c495-4f15-af36-db7eb786ff52
+      ID: ca91bb4d-eebc-4ca2-b57a-55d051fa0824
+    FlowOutputs:
+    - Name: Done
+      ID: e56f1d9a-51df-47b5-a2c8-7f3b8e6aa510
+    DataInputs:
+    - Name: input
+      Type:
+        _assemblyTypeName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      ID: c47dc58f-765d-43aa-bb59-36544d2a5b37
+      UIConst: 0
+      DefaultStringValue: 
+      ValDefs: {x: 0, y: 0, z: 0, w: 0}
+      DefaultObject: {fileID: 0}
+      ConstInput: 0
+      EditorConstName: 
+    - Name: pattern
+      Type:
+        _assemblyTypeName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      ID: b5875347-8714-444c-bab9-fa2142719311
+      UIConst: 0
+      DefaultStringValue: (?i)mirror
+      ValDefs: {x: 0, y: 0, z: 0, w: 0}
+      DefaultObject: {fileID: 0}
+      ConstInput: 0
+      EditorConstName: 
+    DataOutputs:
+    - Name: bool
+      TargetIds:
+      - 8059e58c-52dc-466e-87e9-278b7d31b3cc
+      Type:
+        _assemblyTypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      ID: 9c614b26-90ef-414f-8959-1b10b48f555d
+    NoadType: 1
+    _position: {x: 548, y: 118}
+    LastPosition: {x: 548, y: 118}
+    Book: {fileID: 11400000, guid: 97fafb592a7f3f442b952fdee70edf10, type: 2}
+    BookTag: '{"_assemblyMethodName":"System.Text.RegularExpressions.Regex, System,
+      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.IsMatch","Parameters":[{"_assemblyTypeName":"System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"},{"_assemblyTypeName":"System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"}]}'
+  - Name: GameObject.SetActive
+    ID: 1b56fa9c-1ba9-47d3-8c37-c249e65dc6a8
+    FlowInputs:
+    - Name: Reflection Exec
+      SourcesIds:
+      - 88970cb0-e7cf-4436-b199-84b9f8c9ebb2
+      ID: 871b2788-e9fa-407a-b14f-f9675e15b099
+    FlowOutputs:
+    - Name: Done
+      ID: a9f0174f-118c-4d02-9527-a53e6d2fb18e
+    DataInputs:
+    - Name: GameObject
+      Type:
+        _assemblyTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      ID: d656e884-04a8-4fb1-a845-d66cf55be923
+      UIConst: 0
+      DefaultStringValue: 
+      ValDefs: {x: 0, y: 0, z: 0, w: 0}
+      DefaultObject: {fileID: 2819065750126334228}
+      ConstInput: 0
+      EditorConstName: 
+    - Name: value
+      Type:
+        _assemblyTypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      ID: 48bfcf7d-bfcc-44c2-b606-5b7b6fc4ae76
+      UIConst: 0
+      DefaultStringValue: 
+      ValDefs: {x: 0, y: 0, z: 0, w: 0}
+      DefaultObject: {fileID: 0}
+      ConstInput: 0
+      EditorConstName: 
+    DataOutputs: []
+    NoadType: 1
+    _position: {x: 970, y: 118}
+    LastPosition: {x: 970, y: 118}
+    Book: {fileID: 11400000, guid: fd6f7bcaa596bc640b3d509dada399ba, type: 2}
+    BookTag: '{"_assemblyMethodName":"UnityEngine.GameObject, UnityEngine.CoreModule,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null.SetActive","Parameters":[{"_assemblyTypeName":"System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"}]}'
+  - Name: object.Equals
+    ID: f1ed9132-f50f-466d-8f20-287af6bc8854
+    FlowInputs:
+    - Name: Exec
+      SourcesIds:
+      - e56f1d9a-51df-47b5-a2c8-7f3b8e6aa510
+      ID: 4e1baaa2-9ebf-439f-a854-6ca3aae9a2e3
+    FlowOutputs:
+    - Name: Done
+      ID: 88970cb0-e7cf-4436-b199-84b9f8c9ebb2
+    DataInputs:
+    - Name: objA
+      Type:
+        _assemblyTypeName: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      ID: 8059e58c-52dc-466e-87e9-278b7d31b3cc
+      UIConst: 0
+      DefaultStringValue: 
+      ValDefs: {x: 0, y: 0, z: 0, w: 0}
+      DefaultObject: {fileID: 0}
+      ConstInput: 0
+      EditorConstName: 
+    - Name: objB
+      Type:
+        _assemblyTypeName: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      ID: 635abb4b-c337-4509-ae45-c8250fef1f60
+      UIConst: 0
+      DefaultStringValue: 
+      ValDefs: {x: 0, y: 0, z: 0, w: 0}
+      DefaultObject: {fileID: 0}
+      ConstInput: 1
+      EditorConstName: 
+    DataOutputs:
+    - Name: bool
+      TargetIds:
+      - 48bfcf7d-bfcc-44c2-b606-5b7b6fc4ae76
+      Type:
+        _assemblyTypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      ID: 2226bae6-b959-4bec-bf00-d42dc4c30427
+    NoadType: 1
+    _position: {x: 773, y: 118}
+    LastPosition: {x: 773, y: 118}
+    Book: {fileID: 11400000, guid: 97fafb592a7f3f442b952fdee70edf10, type: 2}
+    BookTag: '{"_assemblyMethodName":"System.Object, mscorlib, Version=4.0.0.0, Culture=neutral,
+      PublicKeyToken=b77a5c561934e089.Equals","Parameters":[{"_assemblyTypeName":"System.Object,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"},{"_assemblyTypeName":"System.Object,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"}]}'
+  LastGenerated: {fileID: 0}
+  NoteDatas: []
