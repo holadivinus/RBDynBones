@@ -82,7 +82,32 @@ namespace RBDynBones
             return o;
         }
 
-        private static Type SmoothFollowerT = NoodledEvents.CookBook.GetExtType("SmoothFollower");
+        private static Type _t; 
+        private static Type SmoothFollowerT 
+        {
+            get
+            {
+                if (_t  == null)
+                {
+                    foreach (var ass in AppDomain.CurrentDomain.GetAssemblies())
+                    {
+                        if (ass == null)
+                            continue;
+                        foreach (Type t in ass.GetTypes())
+                            try
+                            {
+                                if (t.Name == "SmoothFollower")
+                                {
+                                    _t = t;
+                                    return _t;
+                                }
+                            }
+                            catch (TypeLoadException) { }
+                    }
+                }
+                return _t;
+            }
+        }
         private static void Set_targetTransform(object obj, Transform t) => SmoothFollowerT.GetField("targetTransform", (BindingFlags)60).SetValue(obj, t);
         private static void Set_TranslationSmoothTime(object obj, float f) => SmoothFollowerT.GetField("TranslationSmoothTime", (BindingFlags)60).SetValue(obj, f);
         private static void Set_RotationalSmoothTime(object obj, float f) => SmoothFollowerT.GetField("RotationalSmoothTime", (BindingFlags)60).SetValue(obj, f);
