@@ -3,11 +3,11 @@ This is a Unity+MarrowSDK tool that'll take a hierarchy of Bones and set it up a
 As this tool is meant for bonelab, it depends on the [Extended SDK](https://github.com/notnotnotswipez/Marrow-ExtendedSDK-MAINTAINED) & [Noodled Events](https://github.com/holadivinus/Noodled-Events).
 
 Main Features:
- \- Works in Mirrors
-  \- Works in Editor "Play Mode"
-   \- DeOffsets Head/Hair Bones for Self-Interaction
-   \- Can be Animated with the "AnimRig" (Requires good Elasticity)
-   \- Supports Fusion
+ \- Works in Mirrors \n
+  \- Works in Editor "Play Mode" \n
+   \- DeOffsets Head/Hair Bones for Self-Interaction \n
+   \- Can be Animated with the "AnimRig" (Requires good Elasticity) \n
+   \- Supports Fusion \n
 
 Please do note that this is a Beta; 
 Let me know if you run into any issues In [this](https://discord.com/channels/563139253542846474/1344491437676560467) thread within the [Bonelab Community Discord](https://discord.gg/Js2kqYJq).
@@ -35,18 +35,18 @@ Followed by pressing "Finalize All PhysBones" (see below image)
 
 ## Spec
 <ins>PhysBoneMaker:</ins>
-\- Max Sub Joints (max # of trailing sub joints)
- \- Collider Scale (scale of bone colliders)
- \- Collider Curve (curve to determine sub joint collider size by length)
- \- Elasticity (how hard the bone tries to go to its AnimRig pos)
- \- Visual Smoothing (how fast the visual matches up to the PhysicsRig)
-  \- Mirror Rotation Sync Mode Dropdown:
-  \ \- Tweened (Mirror Bones will sync via animations - can cause short but extreme rotation desync)
-  \ \- Direct (Mirror Bones will sync via rotation copy - slower, but perfectly accurate.)
- \- Drag (sub-joint drag, doesn't effect air resistance)
- \- Mass (sub-joint mass)
- \- [Optional] Rig Inheritance (what part of the physics rig is this connected to?)
- \- [Optional] Rig Inheritance Factor (how much of the physics rig velocity should transfer to this bone?)
+\- Max Sub Joints (max # of trailing sub joints) \n
+ \- Collider Scale (scale of bone colliders) \n
+ \- Collider Curve (curve to determine sub joint collider size by length) \n
+ \- Elasticity (how hard the bone tries to go to its AnimRig pos) \n
+ \- Visual Smoothing (how fast the visual matches up to the PhysicsRig) \n
+  \- Mirror Rotation Sync Mode Dropdown: \n
+  \ \- Tweened (Mirror Bones will sync via animations - can cause short but extreme rotation desync) \n
+  \ \- Direct (Mirror Bones will sync via rotation copy - slower, but perfectly accurate.) \n
+ \- Drag (sub-joint drag, doesn't effect air resistance) \n
+ \- Mass (sub-joint mass) \n
+ \- [Optional] Rig Inheritance (what part of the physics rig is this connected to?) \n
+ \- [Optional] Rig Inheritance Factor (how much of the physics rig velocity should transfer to this bone?) \n
 
 As this tool is a tad bit unpolished, so please do add bones to a Prefab Variant of your avatar.
 If anything breaks you can revert the variant, and then let me know in the [Linked Thread](https://discord.com/channels/563139253542846474/1344491437676560467).
