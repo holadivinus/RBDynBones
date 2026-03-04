@@ -2,7 +2,7 @@
 This is a Unity+MarrowSDK tool that'll take a hierarchy of Bones and set it up as a Dynamic-Bone Esque physics chain.
 As this tool is meant for bonelab, it depends on the [Extended SDK](https://github.com/notnotnotswipez/Marrow-ExtendedSDK-MAINTAINED) & [Noodled Events](https://github.com/holadivinus/Noodled-Events).
 
-Main Features:
+Main Features: \
  \- Works in Mirrors \
   \- Works in Editor "Play Mode" \
    \- DeOffsets Head/Hair Bones for Self-Interaction \
@@ -34,15 +34,15 @@ Followed by pressing "Finalize All PhysBones" (see below image)
 ![Image displaying Root Transform Context Menu](https://cdn.discordapp.com/attachments/1344491437676560467/1477888860766736505/image.png?ex=69a86102&is=69a70f82&hm=a92caab458985eeaf89c4cb8df322ef0903b2532162b2843f63f0fb5ea64864e&)
 
 ## Spec
-<ins>PhysBoneMaker:</ins>
+<ins>PhysBoneMaker:</ins> \
 \- Max Sub Joints (max # of trailing sub joints) \
  \- Collider Scale (scale of bone colliders) \
  \- Collider Curve (curve to determine sub joint collider size by length) \
  \- Elasticity (how hard the bone tries to go to its AnimRig pos) \
  \- Visual Smoothing (how fast the visual matches up to the PhysicsRig) \
   \- Mirror Rotation Sync Mode Dropdown: \
-  \ \- Tweened (Mirror Bones will sync via animations - can cause short but extreme rotation desync) \
-  \ \- Direct (Mirror Bones will sync via rotation copy - slower, but perfectly accurate.) \
+  \\- Tweened (Mirror Bones will sync via animations - can cause short but extreme rotation desync) \
+  \\- Direct (Mirror Bones will sync via rotation copy - slower, but perfectly accurate.) \
  \- Drag (sub-joint drag, doesn't effect air resistance) \
  \- Mass (sub-joint mass) \
  \- [Optional] Rig Inheritance (what part of the physics rig is this connected to?) \
