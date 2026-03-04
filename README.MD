@@ -5,11 +5,11 @@ As this tool is meant for bonelab, it depends on the [Extended SDK](https://gith
 Main Features: \
  \- Works in Mirrors \
   \- Works in Editor "Play Mode" \
-   \- DeOffsets Head/Hair Bones for Self-Interaction \
+   \- De-offsets Head/Hair Bones for Self-Interaction \
    \- Can be Animated with the "AnimRig" (Requires good Elasticity) \
    \- Supports Fusion 
 
-Please do note that this is a Beta; 
+Please do note that this is a Beta;  \
 Let me know if you run into any issues In [this](https://discord.com/channels/563139253542846474/1344491437676560467) thread within the [Bonelab Community Discord](https://discord.gg/Js2kqYJq).
 
 ## Installation:
