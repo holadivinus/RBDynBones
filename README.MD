@@ -30,7 +30,7 @@ Let me know if you run into any issues In [this](https://discord.com/channels/56
 Followed by "Remove Component".)
 
 Bonus Tip - You can "Recompile" all bones in a Hierarchy (or Avatar) by Right Clicking the Root Transform,
-Followed by pressing "Finalize All PhysBones" (see below image)
+Followed by pressing "Finalize All PhysBones" (see below image) \
 ![Image displaying Root Transform Context Menu](https://cdn.discordapp.com/attachments/1344491437676560467/1477888860766736505/image.png?ex=69a86102&is=69a70f82&hm=a92caab458985eeaf89c4cb8df322ef0903b2532162b2843f63f0fb5ea64864e&)
 
 ## Spec
