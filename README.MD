@@ -7,7 +7,7 @@ Main Features: \
   \- Works in Editor "Play Mode" \
    \- DeOffsets Head/Hair Bones for Self-Interaction \
    \- Can be Animated with the "AnimRig" (Requires good Elasticity) \
-   \- Supports Fusion \
+   \- Supports Fusion 
 
 Please do note that this is a Beta; 
 Let me know if you run into any issues In [this](https://discord.com/channels/563139253542846474/1344491437676560467) thread within the [Bonelab Community Discord](https://discord.gg/Js2kqYJq).
@@ -41,12 +41,12 @@ Followed by pressing "Finalize All PhysBones" (see below image)
  \- Elasticity (how hard the bone tries to go to its AnimRig pos) \
  \- Visual Smoothing (how fast the visual matches up to the PhysicsRig) \
   \- Mirror Rotation Sync Mode Dropdown: \
-  \\- Tweened (Mirror Bones will sync via animations - can cause short but extreme rotation desync) \
-  \\- Direct (Mirror Bones will sync via rotation copy - slower, but perfectly accurate.) \
+  \\- MirrorSyncMode.Tweened (Mirror Bones will sync via animations - can cause short but extreme rotation desync) \
+  \\- MirrorSyncMode.Direct (Mirror Bones will sync via rotation copy - slower, but perfectly accurate.) \
  \- Drag (sub-joint drag, doesn't effect air resistance) \
  \- Mass (sub-joint mass) \
  \- [Optional] Rig Inheritance (what part of the physics rig is this connected to?) \
- \- [Optional] Rig Inheritance Factor (how much of the physics rig velocity should transfer to this bone?) \
+ \- [Optional] Rig Inheritance Factor (how much of the physics rig velocity should transfer to this bone?) 
 
 As this tool is a tad bit unpolished, so please do add bones to a Prefab Variant of your avatar.
 If anything breaks you can revert the variant, and then let me know in the [Linked Thread](https://discord.com/channels/563139253542846474/1344491437676560467).
