@@ -44,6 +44,7 @@ namespace RBDynBones
 
         public RigSegment RigInheritance = RigSegment.Nope;
         public float RigInheritanceFactor = .1f;
+        public List<int> NoCollisionBones = new();
 
 
         private void OnDrawGizmosSelected()
@@ -57,9 +58,9 @@ namespace RBDynBones
                 Gizmos.DrawLine(boneA.position, boneB.position);
 
             }
-            Gizmos.color = Color.green;
             for (int i = 1; i < bones.Count; i++)
             {
+                Gizmos.color = NoCollisionBones.Contains(i-1) ? Color.blue : Color.green;
                 Transform bone = bones[i];
                 Gizmos.DrawWireSphere(bone.position, ColliderCurve.Evaluate((i - 1) / (float)(bones.Count - 1)) * ColliderScale);
             }
@@ -82,12 +83,12 @@ namespace RBDynBones
             return o;
         }
 
-        private static Type _t; 
-        private static Type SmoothFollowerT 
+        private static Type _t;
+        private static Type SmoothFollowerT
         {
             get
             {
-                if (_t  == null)
+                if (_t == null)
                 {
                     foreach (var ass in AppDomain.CurrentDomain.GetAssemblies())
                     {
@@ -234,6 +235,8 @@ namespace RBDynBones
                 newPhyser.transform.SetParent(physicsRoot.transform, true);
                 newPhyser.transform.localScale = Vector3.one;
                 var newRB = newPhyser.AddComponent<Rigidbody>();
+
+                if (NoCollisionBones.Contains(i)) newPhyser.layer = 9;
 
                 float colScale = ColliderCurve.Evaluate(i / (float)(bones.Count - 1)) * ColliderScale;
                 colScale = newPhyser.transform.InverseTransformPoint((newPhyser.transform.position + (Vector3.up * colScale))).magnitude;

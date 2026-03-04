@@ -46,7 +46,8 @@ Followed by pressing "Finalize All PhysBones" (see below image) \
  \- Drag (sub-joint drag, doesn't effect air resistance) \
  \- Mass (sub-joint mass) \
  \- [Optional] Rig Inheritance (what part of the physics rig is this connected to?) \
- \- [Optional] Rig Inheritance Factor (how much of the physics rig velocity should transfer to this bone?) 
+ \- [Optional] Rig Inheritance Factor (how much of the physics rig velocity should transfer to this bone?) \
+ \- [List] No Collision Bones (List of Bone Numbers 0+ to have no collision, in case of PhysicsRig Interception.)
 
 As this tool is a tad bit unpolished, so please do add bones to a Prefab Variant of your avatar. \
 If anything breaks you can revert the variant, and then let me know in the [Linked Thread](https://discord.com/channels/563139253542846474/1344491437676560467). \
