@@ -25,7 +25,7 @@ Let me know if you run into any issues In [this](https://discord.com/channels/56
 3. "Compile" this bone by Right Clicking the Component Title -> Pressing "Finalize for Bonelab" (see below image)
 
 
-![Image displaying the Component's Context Menu](https://cdn.discordapp.com/attachments/1344491437676560467/1477888860250701976/image.png?ex=69a86102&is=69a70f82&hm=4433f30ab6999a9e957870fdb950945ea574257045b49a643d76aa1c74c779d2&)
+![Image displaying the Component's Context Menu](https://cdn.discordapp.com/attachments/1344491437676560467/1477888860250701976/image.png?ex=69a86102&is=69a70f82&hm=4433f30ab6999a9e957870fdb950945ea574257045b49a643d76aa1c74c779d2&) \
 (Additionally, you can remove a bone entirely by pressing "Remove Generated Objects",
 Followed by "Remove Component".)
 
