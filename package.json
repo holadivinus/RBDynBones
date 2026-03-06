@@ -1,6 +1,6 @@
 {
     "name": "com.holadivinus.rbdynbones",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "displayName": "RBDynBones",
     "description": "Unity+MarrowSDK Utility to Setup a Hierarchy of bones to act similarly to Dynamic Bones via RigidBodies and CharacterJoints.",
     "unity": "2021.3",

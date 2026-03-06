@@ -1,5 +1,72 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &96060925787309231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8710883369442606615}
+  - component: {fileID: 1743725255075620660}
+  - component: {fileID: 2061337783581837576}
+  m_Layer: 0
+  m_Name: if True
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8710883369442606615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96060925787309231}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8481539284865819706}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1743725255075620660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96060925787309231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003c25630808c7243847bd9149749434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _AwakeEvent:
+    _PersistentCalls: []
+  _StartEvent:
+    _PersistentCalls: []
+  _EnableEvent:
+    _PersistentCalls: []
+  _DisableEvent:
+    _PersistentCalls: []
+  _DestroyEvent:
+    _PersistentCalls: []
+--- !u!114 &2061337783581837576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96060925787309231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d22c1b33da824b42a49f8254fae038f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &271477835949791850
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,37 +159,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_InteractorSource: {fileID: 0}
   m_IgnoreHoverEvents: 0
---- !u!1 &1293905202493210496
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6817169585715842691}
-  m_Layer: 0
-  m_Name: Bowl_generated
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6817169585715842691
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293905202493210496}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 836139829961473357}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2676384345050049662
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +208,37 @@ PositionConstraint:
   m_IsContraintActive: 0
   m_IsLocked: 0
   m_Sources: []
+--- !u!1 &3031831855237740424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5471102750622805178}
+  m_Layer: 0
+  m_Name: Bowl_generated
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5471102750622805178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3031831855237740424}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 836139829961473357}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3735690828173546219
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,6 +288,39 @@ PositionConstraint:
   m_IsContraintActive: 0
   m_IsLocked: 0
   m_Sources: []
+--- !u!1 &6877015334854814099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8481539284865819706}
+  m_Layer: 0
+  m_Name: Bowl_generated
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8481539284865819706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6877015334854814099}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8710883369442606615}
+  - {fileID: 12681292857335893}
+  m_Father: {fileID: 836139829961473357}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7147857040981561675
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +368,7 @@ GameObject:
   - component: {fileID: 1697070489136183777}
   - component: {fileID: 2841660694785224131}
   - component: {fileID: 7100790139892052739}
+  - component: {fileID: 8276155083606684171}
   m_Layer: 0
   m_Name: BoneLocalPosFixxer
   m_TagString: Untagged
@@ -288,7 +389,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2473059303797029303}
-  - {fileID: 6817169585715842691}
+  - {fileID: 5471102750622805178}
+  - {fileID: 8481539284865819706}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -310,9 +412,124 @@ MonoBehaviour:
     _PersistentCalls: []
   _EnableEvent:
     _PersistentCalls:
-    - _Target: {fileID: 2841660694785224131}
-      _MethodName: Invoke
-      _PersistentArguments: []
+    - _Target: {fileID: 0}
+      _MethodName: SLZ.Marrow.Utilities.ObjectPathExtensions, SLZ.Marrow, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null.ObjectPath
+      _PersistentArguments:
+      - _Type: 13
+        _Int: 0
+        _String: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 8605538333472741827}
+    - _Target: {fileID: 0}
+      _MethodName: System.Text.RegularExpressions.Regex, System, Version=4.0.0.0,
+        Culture=neutral, PublicKeyToken=b77a5c561934e089.IsMatch
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 0
+        _String: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 2
+        _Int: 0
+        _String: (?i)bodyMall
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 96060925787309231}
+      _MethodName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 9216333078409918357}
+      _MethodName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 96060925787309231}
+      _MethodName: SetActive
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 1
+        _String: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 0}
+      _MethodName: System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.Equals
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 1
+        _String: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 9216333078409918357}
+      _MethodName: SetActive
+      _PersistentArguments:
+      - _Type: 15
+        _Int: 5
+        _String: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 96060925787309231}
+      _MethodName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 9216333078409918357}
+      _MethodName: SetActive
+      _PersistentArguments:
+      - _Type: 1
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
   _DisableEvent:
     _PersistentCalls: []
   _DestroyEvent:
@@ -1727,7 +1944,7 @@ MonoBehaviour:
     BookTag: '{"_assemblyMethodName":"UnityEngine.Transform, UnityEngine.CoreModule,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null.set_localPosition","Parameters":[{"_assemblyTypeName":"UnityEngine.Vector3,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"}]}'
-  LastGenerated: {fileID: 1293905202493210496}
+  LastGenerated: {fileID: 3031831855237740424}
   NoteDatas:
   - Text: '// BONES DONT NATURALLY MOVE
 
@@ -1749,3 +1966,254 @@ MonoBehaviour:
       // yipee!'
     Position: {x: 222, y: 700}
     Size: {x: 404, y: 162}
+--- !u!114 &8276155083606684171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8605538333472741827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 548d337563b26034abbc6be67b18eea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BowlName: Bowl
+  EventHolder: {fileID: 1697070489136183777}
+  EventFieldPath: _EnableEvent
+  BowlEvtHolderType:
+    _assemblyTypeName: UltEvents.LifeCycleEvents, UltEvents, Version=1.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  _pos: {x: 0, y: 0}
+  _size: {x: 1000, y: 800}
+  NodeDatas:
+  - Name: 
+    ID: 19f46cc6-1cc2-4f5d-b391-9b0b8c7c388d
+    FlowInputs: []
+    FlowOutputs:
+    - Name: 
+      ID: dc304b31-377a-4426-a1aa-ef6698c1153a
+    DataInputs: []
+    DataOutputs: []
+    NoadType: 0
+    _position: {x: 0, y: 0}
+    LastPosition: {x: 0, y: 0}
+    Book: {fileID: 0}
+    BookTag: 
+  - Name: ObjectPathExtensions.ObjectPath
+    ID: 78568fbb-db0b-4eed-879d-82ee3e6c74a8
+    FlowInputs:
+    - Name: Exec
+      SourcesIds:
+      - dc304b31-377a-4426-a1aa-ef6698c1153a
+      ID: 9c2e5f5c-7520-4328-8d0d-258975adb4cd
+    FlowOutputs:
+    - Name: Done
+      ID: 54ec10a5-954a-44f8-b0ca-d350da2223c0
+    DataInputs:
+    - Name: go
+      Type:
+        _assemblyTypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      ID: 284c2fbb-6e75-43a1-a053-53fc7a79baf3
+      UIConst: 0
+      DefaultStringValue: 
+      ValDefs: {x: 0, y: 0, z: 0, w: 0}
+      DefaultObject: {fileID: 8605538333472741827}
+      ConstInput: 0
+      EditorConstName: 
+    DataOutputs:
+    - Name: string
+      TargetIds:
+      - de358e80-d346-48d5-b4b2-c7252d131d60
+      Type:
+        _assemblyTypeName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      ID: 81419b65-dfd0-4458-bba6-7f919efa1d8c
+    NoadType: 1
+    _position: {x: 196, y: 0}
+    LastPosition: {x: 196, y: 0}
+    Book: {fileID: 11400000, guid: 97fafb592a7f3f442b952fdee70edf10, type: 2}
+    BookTag: '{"_assemblyMethodName":"SLZ.Marrow.Utilities.ObjectPathExtensions,
+      SLZ.Marrow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null.ObjectPath","Parameters":[{"_assemblyTypeName":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"}]}'
+  - Name: Regex.IsMatch
+    ID: 1bd8cd45-352a-44ac-abbd-1da2bb32f0b3
+    FlowInputs:
+    - Name: Exec
+      SourcesIds:
+      - 54ec10a5-954a-44f8-b0ca-d350da2223c0
+      ID: 87e6bb7a-2b3c-41af-9e09-711c36cda26f
+    FlowOutputs:
+    - Name: Done
+      ID: 60d4112a-cf5b-4649-bb69-5e09c76c7eb7
+    DataInputs:
+    - Name: input
+      Type:
+        _assemblyTypeName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      ID: de358e80-d346-48d5-b4b2-c7252d131d60
+      UIConst: 0
+      DefaultStringValue: 
+      ValDefs: {x: 0, y: 0, z: 0, w: 0}
+      DefaultObject: {fileID: 0}
+      ConstInput: 0
+      EditorConstName: 
+    - Name: pattern
+      Type:
+        _assemblyTypeName: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      ID: c3c9cd0d-c80b-4237-8ceb-1dfcd94d3245
+      UIConst: 0
+      DefaultStringValue: (?i)bodyMall
+      ValDefs: {x: 0, y: 0, z: 0, w: 0}
+      DefaultObject: {fileID: 0}
+      ConstInput: 0
+      EditorConstName: 
+    DataOutputs:
+    - Name: bool
+      TargetIds:
+      - 550a029f-576a-4b08-9513-49564f5e1b2b
+      Type:
+        _assemblyTypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      ID: 3fd15843-1303-4bf8-98af-058058f5a95b
+    NoadType: 1
+    _position: {x: 462, y: 0}
+    LastPosition: {x: 462, y: 0}
+    Book: {fileID: 11400000, guid: 97fafb592a7f3f442b952fdee70edf10, type: 2}
+    BookTag: '{"_assemblyMethodName":"System.Text.RegularExpressions.Regex, System,
+      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.IsMatch","Parameters":[{"_assemblyTypeName":"System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"},{"_assemblyTypeName":"System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"}]}'
+  - Name: flow.if
+    ID: 90295742-01aa-4bb3-aab9-3bd51aa02e13
+    FlowInputs:
+    - Name: Exec
+      SourcesIds:
+      - 60d4112a-cf5b-4649-bb69-5e09c76c7eb7
+      ID: 1d94e35d-2fe6-4e81-b764-998ba948ea1d
+    FlowOutputs:
+    - Name: true
+      ID: 7b2aeedb-c9cf-463d-9edc-6ee332849226
+    - Name: false
+      ID: cceb8149-c433-42a6-b45c-be282175e0f9
+    DataInputs:
+    - Name: condition
+      Type:
+        _assemblyTypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      ID: 550a029f-576a-4b08-9513-49564f5e1b2b
+      UIConst: 0
+      DefaultStringValue: 
+      ValDefs: {x: 0, y: 0, z: 0, w: 0}
+      DefaultObject: {fileID: 0}
+      ConstInput: 0
+      EditorConstName: 
+    DataOutputs: []
+    NoadType: 1
+    _position: {x: 682, y: 0}
+    LastPosition: {x: 682, y: 0}
+    Book: {fileID: 11400000, guid: 901e016ff6c33fd4da034153e7242251, type: 2}
+    BookTag: if
+  - Name: DelayedUltEventHolder.Invoke
+    ID: 9b8be2f0-3fb0-46eb-95e2-2662d577294b
+    FlowInputs:
+    - Name: Reflection Exec
+      SourcesIds:
+      - cceb8149-c433-42a6-b45c-be282175e0f9
+      ID: 18d0b587-acb4-4b00-861a-f2649bc7f715
+    FlowOutputs:
+    - Name: Done
+      ID: b085bf92-3369-4139-84a8-354066f599c5
+    DataInputs:
+    - Name: DelayedUltEventHolder
+      Type:
+        _assemblyTypeName: UltEvents.DelayedUltEventHolder, UltEvents, Version=1.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      ID: 5a21b96a-62ad-4957-92be-7e8bbd997b92
+      UIConst: 0
+      DefaultStringValue: 
+      ValDefs: {x: 0, y: 0, z: 0, w: 0}
+      DefaultObject: {fileID: 2841660694785224131}
+      ConstInput: 0
+      EditorConstName: 
+    DataOutputs: []
+    NoadType: 1
+    _position: {x: 829, y: 24}
+    LastPosition: {x: 829, y: 24}
+    Book: {fileID: 11400000, guid: fd6f7bcaa596bc640b3d509dada399ba, type: 2}
+    BookTag: '{"_assemblyMethodName":"UltEvents.DelayedUltEventHolder, UltEvents,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null.Invoke","Parameters":[]}'
+  LastGenerated: {fileID: 6877015334854814099}
+  NoteDatas: []
+--- !u!1 &9216333078409918357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 12681292857335893}
+  - component: {fileID: 6688912938949323888}
+  - component: {fileID: 234034447170351724}
+  m_Layer: 0
+  m_Name: if False
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &12681292857335893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9216333078409918357}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8481539284865819706}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6688912938949323888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9216333078409918357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003c25630808c7243847bd9149749434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _AwakeEvent:
+    _PersistentCalls: []
+  _StartEvent:
+    _PersistentCalls: []
+  _EnableEvent:
+    _PersistentCalls:
+    - _Target: {fileID: 2841660694785224131}
+      _MethodName: Invoke
+      _PersistentArguments: []
+  _DisableEvent:
+    _PersistentCalls: []
+  _DestroyEvent:
+    _PersistentCalls: []
+--- !u!114 &234034447170351724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9216333078409918357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d22c1b33da824b42a49f8254fae038f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

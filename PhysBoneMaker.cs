@@ -166,17 +166,22 @@ namespace RBDynBones
 
                     var bp = fixxer.transform.Find("VARS/gobj_Vector3_var_BoneOrigLocPos").GetComponent<PositionConstraint>();
                     bp.translationOffset = physicsRoot.transform.localPosition;
+
+                    foreach (var item in fixxer.GetComponentsInChildren<SerializedBowl>(true))
+                        DestroyImmediate(item);
                 }
             }
 
 
             // remove in mirror logic
             {
-                var template = AssetDatabase.LoadAssetAtPath<GameObject>(BaseFolder + "RemoveInMirror.prefab").GetComponent<LifeCycleEvents>();
-                var lce = physicsRoot.AddComponent<LifeCycleEvents>();
-                lce.EnableEvent.CopyFrom(template.EnableEvent);
-                lce.EnableEvent.PersistentCallsList[0].PersistentArguments[0].Object = lce.gameObject;
-                lce.EnableEvent.PersistentCallsList[3].FSetTarget(lce.gameObject);
+                var template = AssetDatabase.LoadAssetAtPath<GameObject>(BaseFolder + "RemoveInMirror.prefab");
+                var newT = UnityEngine.Object.Instantiate(template);
+                newT.transform.SetParent(physicsRoot.transform);
+                newT.GetComponent<VarMan>().Vars.First(v => v.Name == "PhysChain").DefaultObject = physicsRoot.gameObject;
+                ApplyVars(newT.GetComponent<VarMan>());
+                foreach (var item in newT.gameObject.GetComponentsInChildren<SerializedBowl>(true))
+                    DestroyImmediate(item);
             }
 
             // Section for Anims Root; aka where the phys items tryto goto
@@ -417,7 +422,9 @@ namespace RBDynBones
                 man.Vars.First(v => v.Name == "LocalTargetGobj").DefaultObject = physBalls[i].gameObject;
                 man.Vars.First(v => v.Name == "DirectRotate").DefaultBoolValue = MirrorRotationSyncMode == MirrorSyncMode.Direct;
                 man.Vars.First(v => v.Name == "DirectInstant").DefaultBoolValue = Mathf.Clamp01((1 / 120f) * VisualSmoothing * 20) == 1;
-
+                man.Vars.First(v => v.Name == "SmthParent").DefaultObject = smoothingRoot.transform;
+                man.Vars.First(v => v.Name == "SrcTrnsf").DefaultObject = boneA.transform;
+                
                 // lock visuals to smoother
                 var pa = boneA.AddComponent<ParentConstraint>();
                 pa.AddSource(new ConstraintSource() { sourceTransform = newSmooth.transform, weight = 1 });
@@ -425,11 +432,22 @@ namespace RBDynBones
                 if (method != null)
                     method.Invoke(pa, null);
 
+                man.Vars.First(v => v.Name == "SrcConstrnt").DefaultObject = pa;
                 ApplyVars(man);
 
 
                 foreach (var item in newSmooth.GetComponentsInChildren<SerializedBowl>(true))
                     DestroyImmediate(item);
+
+                var lce = newSmooth.GetComponent<LifeCycleEvents>();
+                lce.DisableEvent.PersistentCallsList[3].PersistentArguments[0].Vector3 = newSmooth.transform.localPosition;
+                lce.DisableEvent.PersistentCallsList[4].PersistentArguments[0].Quaternion = newSmooth.transform.localRotation;
+
+                lce.DisableEvent.PersistentCallsList[5].PersistentArguments[0].Vector3 = smoothingRoot.transform.localPosition;
+                lce.DisableEvent.PersistentCallsList[6].PersistentArguments[0].Quaternion = smoothingRoot.transform.localRotation;
+
+                lce.DisableEvent.PersistentCallsList[8].PersistentArguments[0].Vector3 = boneA.transform.localPosition;
+                lce.DisableEvent.PersistentCallsList[9].PersistentArguments[0].Quaternion = boneA.transform.localRotation;
 
                 smoothers.Add(newSmooth.transform);
             }
